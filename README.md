@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SQL Homework - Employee Database: A Mystery in Two Parts
 
 ![sql.png](sql.png)
@@ -112,3 +113,9 @@ Mockaroo, LLC. (2021). Realistic Data Generator. [https://www.mockaroo.com/](htt
 - - -
 
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+=======
+# SQL-challenge
+I created the data modeling of Employee database using http://www.quickdatabasediagrams.com:
+
+![image](https://user-images.githubusercontent.com/65046405/127941586-2aa28724-26bb-480d-b71f-98a6eda4ceb3.png)
+>>>>>>> 7e34c6c2134fd0f1ae4e9a945686664cb860e926

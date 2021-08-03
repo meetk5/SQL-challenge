@@ -18,12 +18,14 @@ Create table Employees(
 
 Select * from Employees;
 
+--Create table Departments
 Create table Departments(
 	Dept_No varchar(8) Primary Key,
 	Dept_name varchar);
 	
 Select * from Departments;
 
+--Create table Salaries
 Create table Salaries(
 	Emp_No varchar(10) NOT NULL,
 	Salary money,
@@ -31,6 +33,7 @@ Create table Salaries(
 	
 Select * from Salaries;
 
+--Create table Dept_Emp
 Create table Dept_Emp(
 	Emp_No varchar(10),
 	Dept_No varchar(8),
@@ -40,6 +43,7 @@ Create table Dept_Emp(
 
 Select * from Dept_Emp;
 
+--Create table Dept_Manager
 Create table Dept_Manager(
 	Dept_No varchar(8) NOT NULL,
 	Emp_No varchar(10) NOT NULL,
