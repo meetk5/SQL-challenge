@@ -1,6 +1,6 @@
 --List the following details of each employee:
 --employee number, last name, first name, sex, and salary.
-select e.empno,e.last_name, e.first_name, e.sex, s.salary
+Select e.empno,e.last_name, e.first_name, e.sex, s.salary
 from employees e
 INNER JOIN salaries s ON
 e.empno = s.emp_no;
@@ -33,16 +33,19 @@ WHERE first_name = 'Hercules' and last_name like 'B%';
 --List all employees in the Sales department,
 --including their employee number, last name, first name, and department name.
 Select emp.empno, emp.last_name,emp.first_name, d.dept_name from employees emp
-INNER JOIN dept_emp de ON emp.empno = de.emp_no
-INNER JOIN departments d ON de.dept_no = d.dept_no
-WHERE empno IN (Select emp_no from Dept_Emp where dept_no IN
-			   (Select dept_no from Departments where dept_name = 'Sales'));
-Select emp.empno, emp.last_name,emp.first_name, d.dept_name from employees emp
 RIGHT JOIN dept_emp de ON emp.empno = de.emp_no
 RIGHT JOIN departments d ON de.dept_no = d.dept_no
 WHERE d.dept_name = 'Sales';
 
+--List all employees in the Sales and Development departments,
+--including their employee number, last name, first name, and department name.
+Select emp.empno, emp.last_name,emp.first_name, d.dept_name from employees emp
+RIGHT JOIN dept_emp de ON emp.empno = de.emp_no
+RIGHT JOIN departments d ON de.dept_no = d.dept_no
+WHERE d.dept_name = 'Sales' OR d.dept_name = 'Development';
+
 --In descending order, list the frequency count of employee last names,
 --i.e., how many employees share each last name.
-Select last_name,count(last_name) from employees 
-GROUP BY last_name;
+Select last_name, count(last_name) AS frequency from employees 
+GROUP BY last_name 
+ORDER BY frequency DESC;
