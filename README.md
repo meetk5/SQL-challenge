@@ -40,13 +40,13 @@ Once the database system was created, I did the following analysis:
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 
-## Submission
+### Submission
 
-* Created an image file of your ERD.
+* Created an image file of ERD.
 
-* Created a `.sql` file of your table schemata.
+* Created a `.sql` file of table schemata.
 
-* Created a `.sql` file of your queries.
+* Created a `.sql` file of queries.
 
 * Created and uploaded a repository with the above files to GitHub and post a link on BootCamp Spot.
 
